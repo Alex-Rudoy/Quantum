@@ -1,0 +1,37 @@
+{
+  "name": "quantum",
+  "version": "1.0.0",
+  "description": "Quantum gravity landing page",
+  "main": "webpack.config.js",
+  "scripts": {
+    "dev": "webpack-dev-server",
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alex-Rudoy/Quantum.git"
+  },
+  "author": "Alex Rudenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alex-Rudoy/Quantum/issues"
+  },
+  "homepage": "https://github.com/Alex-Rudoy/Quantum#readme",
+  "dependencies": {
+    "@babel/core": "^7.18.10",
+    "@babel/preset-env": "^7.18.10",
+    "babel-loader": "^8.2.5",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.1",
+    "dotenv": "^16.0.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "node-sass": "^7.0.1",
+    "sass-loader": "^13.0.2",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.3"
+  }
+}

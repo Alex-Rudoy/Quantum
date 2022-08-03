@@ -1,0 +1,26 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 110px;
+  height: 110px;
+  background: linear-gradient(var(--bg) 70%, transparent);
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 64px;
+
+    a {
+      color: var(--text);
+      text-decoration: none;
+      font-size: 14px;
+      line-height: 16px;
+
+      &:hover {
+        color: #bbb;
+      }
+    }
+  }
+}
