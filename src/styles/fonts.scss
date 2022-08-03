@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "THICCCBOI";
+  src: url("../fonts/THICCCBOI-Regular.eot");
+  src: url("../fonts/THICCCBOI-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/THICCCBOI-Regular.woff2") format("woff2"),
+    url("../fonts/THICCCBOI-Regular.woff") format("woff"),
+    url("../fonts/THICCCBOI-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "THICCCBOI";
+  src: url("../fonts/THICCCBOI-Bold.eot");
+  src: url("../fonts/THICCCBOI-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/THICCCBOI-Bold.woff2") format("woff2"),
+    url("../fonts/THICCCBOI-Bold.woff") format("woff"),
+    url("../fonts/THICCCBOI-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "THICCCBOI";
+  src: url("../fonts/THICCCBOI-Black.eot");
+  src: url("../fonts/THICCCBOI-Black.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/THICCCBOI-Black.woff2") format("woff2"),
+    url("../fonts/THICCCBOI-Black.woff") format("woff"),
+    url("../fonts/THICCCBOI-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+.fw4 {
+  font-weight: 400;
+}
+
+.fw7 {
+  font-weight: 700;
+}
+
+.fw9 {
+  font-weight: 900;
+}
