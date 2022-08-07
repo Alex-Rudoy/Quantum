@@ -11,6 +11,8 @@ body {
 * {
   box-sizing: border-box;
   transition: all 0.3s ease;
+  margin: 0;
+  user-select: none;
 }
 
 button {
@@ -32,6 +34,8 @@ button {
 section {
   position: relative;
   min-height: 100vh;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
 
   .bg {
     position: absolute;
@@ -40,5 +44,6 @@ section {
     left: 0;
     bottom: 0;
     right: 0;
+    pointer-events: none;
   }
 }

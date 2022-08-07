@@ -1,1 +1,39 @@
+.about {
+  display: flex;
+  padding-left: 330px;
+  padding-right: 110px;
+  align-items: center;
 
+  &_container {
+    display: flex;
+    justify-content: flex-start;
+
+    h2 {
+      flex: 1;
+      min-width: max-content;
+      margin-right: 30px;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 30px;
+      border-left: 1px solid var(--text);
+      padding-left: 15px;
+      padding-bottom: 30px;
+
+      &.last {
+        padding-bottom: 0;
+        margin-bottom: 60px;
+      }
+    }
+
+    .accent {
+      padding-left: 16px;
+      border-left: none;
+    }
+  }
+
+  &_content {
+    flex: 2;
+  }
+}
