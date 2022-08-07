@@ -1,0 +1,36 @@
+:root {
+  --bg: #121212;
+  --text: #fff;
+  --lightgray: #f5f5f5;
+  --gray: #bbb;
+  --purple: #8b4af9;
+  --blue: #00eeff;
+  --deepblue: #4a69c9;
+  --pink: #df678a;
+}
+
+.web {
+  background: linear-gradient(90deg, var(--pink) -5%, var(--purple) 105%);
+}
+
+.game {
+  background: linear-gradient(90deg, var(--purple) -5%, var(--deepblue) 70%);
+}
+
+.studio {
+  background: linear-gradient(90deg, #23c6fe -4.56%, #01efff 71.06%);
+}
+
+.accent {
+  background: linear-gradient(90deg, var(--purple) -5%, var(--blue) 71%);
+}
+
+.quarters {
+  background: linear-gradient(270deg, var(--purple) 35%, var(--blue) 70%);
+}
+
+.gradientText {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

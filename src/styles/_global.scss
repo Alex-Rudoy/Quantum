@@ -1,0 +1,44 @@
+html {
+  font-family: "THICCCBOI", sans-serif;
+  color: var(--text);
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+}
+
+* {
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+button {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--lightgray);
+  border-radius: 16px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--gray);
+  }
+}
+
+section {
+  position: relative;
+  min-height: 100vh;
+
+  .bg {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+}

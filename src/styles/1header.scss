@@ -1,4 +1,9 @@
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,8 +24,13 @@ header {
       line-height: 16px;
 
       &:hover {
-        color: #bbb;
+        color: var(--gray);
       }
     }
+  }
+
+  button {
+    width: 190px;
+    height: 42px;
   }
 }
