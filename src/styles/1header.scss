@@ -24,12 +24,12 @@ header {
       line-height: 16px;
 
       &:hover {
-        color: var(--gray);
+        color: #bbb;
       }
     }
   }
 
-  button {
+  .contact_us_button {
     width: 190px;
     height: 42px;
   }

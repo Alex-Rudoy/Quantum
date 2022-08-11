@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled" />
     <title>Quantum gravity</title>
     <link rel="icon" type="image/png" href="img/favicon.png" />
   </head>
@@ -19,7 +20,7 @@
         <a href="#projects">PROJECTS</a>
         <a href="#team">TEAM</a>
       </nav>
-      <button class="contact_us fw7">Contact us</button>
+      <button class="contact_us_button fw700">Contact us</button>
     </header>
 
     <section class="intro">
@@ -63,7 +64,7 @@
           Welcome to<br />
           <span class="gradientText accent">Quantum Gravity</span>
         </h2>
-        <p class="fs30 lh40 fw4">
+        <p class="fs30 lh40 fw400">
           Connect WEB 3.0 and Gaming.<br />
           Own. Create. Enjoy decentralized gaming.
         </p>
@@ -73,32 +74,175 @@
     </section>
 
     <section id="services" class="services">
-      Services
+      <div class="services_heading">
+        <h2>Services</h2>
+        <div class="slider_controls">
+          <button id="slider_button_left" class="disabled">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18 9L21 12L18 15"
+                stroke="#030206"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M3.5 12H20.33"
+                stroke="#030206"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <button id="slider_button_right">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18 9L21 12L18 15"
+                stroke="#030206"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M3.5 12H20.33"
+                stroke="#030206"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="slider">
+        <div class="slide" id="slide1">
+          <div class="slide_image_holder">
+            <picture>
+              <source srcset="img/slide1.webp" type="image/webp" />
+              <source srcset="img/slide1.png" type="image/png" />
+              <img src="img/slide1.png" type="image/png" alt="slide1" />
+            </picture>
+          </div>
+          <p class="fs30 fw700 slide_title">Game development</p>
+          <p class="slide_text">
+            We provide Full-cycle game development from scratch, whether an
+            indie project or AAA game.
+          </p>
+          <p class="slide_text">
+            Our team will save your time and money and create a project
+            combining fascinating mechanics, high-quality graphics, and the
+            implementation of cutting-edge technology.
+          </p>
+          <p class="slide_text">
+            We design plots and stories combined with unique game art solutions.
+            Unique ideas, sappy animations, and vivid characters define our
+            projects and strengthen clients dreams!
+          </p>
+        </div>
+
+        <div class="slide" id="slide2">
+          <div class="slide_image_holder">
+            <picture>
+              <source srcset="img/slide2.webp" type="image/webp" />
+              <source srcset="img/slide2.png" type="image/png" />
+              <img src="img/slide2.png" type="image/png" alt="slide2" />
+            </picture>
+          </div>
+          <p class="fs30 fw700 slide_title">Blockchain integration</p>
+          <p class="slide_text">
+            We implement a blockchain Play-To-Earn economy into any game and
+            bridging the gap between Web2 and Web3 gaming by providing an easy
+            and fast solution. This would take the form of creating value inside
+            a game economy, making players the real owners of their assets.
+          </p>
+          <p class="slide_text">
+            We enable incentivizing playing and true player ownership.
+          </p>
+        </div>
+
+        <div class="slide" id="slide3">
+          <div class="slide_image_holder">
+            <picture>
+              <source srcset="img/slide3.webp" type="image/webp" />
+              <source srcset="img/slide3.png" type="image/png" />
+              <img src="img/slide3.png" type="image/png" alt="slide3" />
+            </picture>
+          </div>
+          <p class="fs30 fw700 slide_title">Game development</p>
+          <p class="fs20 fw400 slide_text">
+            We can bring to real life any of your ideas using the most efficient
+            and fast methodology to lift your game on top.
+          </p>
+          <p class="fs20 fw400 slide_text">
+            We want to drive the industry by boosting the most talented
+            developers. Weaver act ast do 'Y na tea th Support vourteam.
+          </p>
+          <p class="fs20 fw400 slide_text">
+            Our team takes care of every slightest thing. We test, create
+            iteration roadmap, promote and monetize your game to bring it on
+            top.
+          </p>
+        </div>
+      </div>
+
       <div class="bg"></div>
     </section>
 
     <section class="contact_us">
-      Contact us
+      <h2>Contact us</h2>
+      <div class="divider"></div>
+      <p class="fw700 fs30 gradientText accent">
+        Have an idea for a new game, or want to integrate Web 3.0 to actoal
+        product?
+      </p>
+      <p class="fw400 fs20">
+        Quantum Gravity Labs will make it all happen. Our team has more than 10
+        years experience creating and launching successful games. If you want
+        it, we’ll build it for you!
+      </p>
+      <button class="contact_us_button fw700">Contact us</button>
+
       <div class="bg"></div>
     </section>
 
     <section id="projects" class="projects">
       Projects
+
       <div class="bg"></div>
     </section>
 
     <section id="team" class="team">
       Team
+
       <div class="bg"></div>
     </section>
 
     <section class="partners">
       Partners
+
       <div class="bg"></div>
     </section>
 
     <section class="roadmap">
       Roadmap
+
       <div class="bg"></div>
     </section>
 

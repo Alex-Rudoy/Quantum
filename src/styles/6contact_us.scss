@@ -1,1 +1,31 @@
+.contact_us {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding-left: 330px;
+  padding-right: 330px;
 
+  h2 {
+    margin-bottom: 40px;
+  }
+
+  .divider {
+    width: 100px;
+    height: 1px;
+    background-color: #fff;
+    margin-bottom: 40px;
+  }
+
+  .accent {
+    margin-bottom: 24px;
+  }
+
+  p {
+    margin-bottom: 40px;
+  }
+
+  .contact_us_button {
+    width: 300px;
+    height: 50px;
+  }
+}
