@@ -1,1 +1,35 @@
+.projects {
+  padding-left: 330px;
+  padding-right: 220px;
 
+  h2 {
+    margin-bottom: 64px;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+
+    .content {
+      width: 500px;
+
+      &.small {
+        width: 330px;
+      }
+
+      .fw700 {
+        margin-bottom: 40px;
+      }
+
+      p {
+        margin-bottom: 24px;
+      }
+
+      .coming_soon {
+        color: #8b4af9;
+      }
+    }
+  }
+}
