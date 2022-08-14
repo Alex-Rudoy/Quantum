@@ -13,7 +13,7 @@
       "quarter_2 line dot_2 goals_2"
       "quarter_3 line dot_3 goals_3";
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 3px 0px 2fr;
+    grid-template-columns: 270px 3px 0px 1fr;
     margin-bottom: 30px;
 
     .quarter {
@@ -21,6 +21,7 @@
       font-size: 40px;
       line-height: 70px;
       font-weight: 700;
+      color: #fff;
       white-space: nowrap;
       margin-right: 30px;
 
@@ -69,7 +70,7 @@
     }
 
     .goals {
-      margin: 8px 0 100px 30px;
+      margin: 8px 0 100px 20px;
       list-style: none; /* Remove default bullets */
       font-size: 24px;
       line-height: 30px;
@@ -95,5 +96,18 @@
         grid-area: goals_3;
       }
     }
+  }
+
+  .blob9 {
+    position: absolute;
+    top: 200px;
+    left: -300px;
+    transform: rotate(180deg);
+  }
+
+  .blob9_2 {
+    position: absolute;
+    bottom: 0px;
+    right: -300px;
   }
 }

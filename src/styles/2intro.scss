@@ -25,7 +25,7 @@
     bottom: 0;
     left: 0;
     width: 60vw;
-    background: linear-gradient(90deg, #030204 46.26%, rgba(3, 2, 4, 0) 100%);
+    background: linear-gradient(90deg, var(--bg) 46.26%, transparent 100%);
   }
 
   .bottom_bg {
@@ -35,6 +35,6 @@
     right: 0;
     left: 0;
     height: 168px;
-    background: linear-gradient(0deg, #121212 46.26%, rgba(18, 18, 18, 0) 100%);
+    background: linear-gradient(0deg, var(--bg) 46.26%, transparent 100%);
   }
 }

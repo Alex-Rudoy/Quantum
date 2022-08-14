@@ -15,7 +15,7 @@
     }
 
     p {
-      border-left: 1px solid #fff;
+      border-left: 1px solid var(--text);
       padding-left: 15px;
       max-width: 646px;
     }
@@ -78,5 +78,11 @@
   > p {
     width: 100%;
     text-align: center;
+  }
+
+  .blob7 {
+    position: absolute;
+    top: 500px;
+    left: -200px;
   }
 }

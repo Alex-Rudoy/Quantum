@@ -31,13 +31,13 @@ button {
 }
 
 .contact_us_button {
-  background: var(--button);
+  background: var(--text);
   border-radius: 16px;
   transition: background-color 0.3s ease;
   font-weight: 700;
 
   &:hover {
-    background: var(--buttonHover);
+    background: var(--hover);
   }
 }
 
