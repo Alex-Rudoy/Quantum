@@ -4,6 +4,10 @@
   align-items: stretch;
   padding-left: 15vw;
 
+  @media (max-width: 768px) {
+    padding-left: 20px;
+  }
+
   &_heading {
     display: flex;
     justify-content: space-between;
@@ -53,7 +57,7 @@
 
 .slide {
   width: 440px;
-  max-width: 100vw;
+  max-width: calc(100vw - 40px);
   margin-right: 110px;
   transform: translate(0, 20%);
 
