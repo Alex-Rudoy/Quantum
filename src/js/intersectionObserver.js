@@ -5,6 +5,10 @@ const observer = new IntersectionObserver(
         entry.target.classList.add("visible");
         observer.unobserve(entry.target);
 
+        if (entry.target.classList.contains("video_trigger")) {
+          document.querySelector("video").classList.add("visible");
+        }
+
         if (entry.target.classList.contains("goals_1")) {
           document
             .querySelector(".quarter_1")
@@ -36,7 +40,7 @@ const observer = new IntersectionObserver(
   },
   {
     threshold: 0.5,
-    rootMargin: "0px 1000px",
+    rootMargin: "0px 1000px 0px 1000px",
   }
 );
 
