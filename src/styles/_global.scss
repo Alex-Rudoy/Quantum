@@ -34,6 +34,7 @@ button {
   background: var(--button);
   border-radius: 16px;
   transition: background-color 0.3s ease;
+  font-weight: 700;
 
   &:hover {
     background: var(--buttonHover);
