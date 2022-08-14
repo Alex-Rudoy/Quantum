@@ -3,21 +3,41 @@
   padding-right: 15vw;
   padding-bottom: 0;
 
+  @media (max-width: 768px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   h2 {
     margin-bottom: 200px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 50px;
+    }
   }
 
   &_grid {
     display: grid;
     grid-template-areas:
-      "quarter_1 line dot_1 goals_1"
-      "quarter_2 line dot_2 goals_2"
-      "quarter_3 line dot_3 goals_3";
+      "quarter_1   line   dot_1   goals_1"
+      "quarter_2   line   dot_2   goals_2"
+      "quarter_3   line   dot_3   goals_3";
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 270px 3px 0px 1fr;
 
+    @media (max-width: 768px) {
+      grid-template-areas:
+        "line   dot_1   quarter_1"
+        "line   dot_1   goals_1"
+        "line   dot_2   quarter_2"
+        "line   dot_2   goals_2"
+        "line   dot_3   quarter_3"
+        "line   dot_3   goals_3";
+      grid-template-rows: 50px 1fr 50px 1fr 50px 1fr;
+      grid-template-columns: 3px 0px 1fr;
+    }
+
     .quarter {
-      grid-area: head;
       font-size: 40px;
       line-height: 70px;
       font-weight: 700;
@@ -25,6 +45,12 @@
       margin-right: 30px;
       transform: translate(-20%, 0);
       opacity: 0;
+
+      @media (max-width: 768px) {
+        font-size: 30px;
+        margin-left: 20px;
+        transform: translate(20%, 0);
+      }
 
       &.active {
         background: linear-gradient(270deg, var(--purple) 35%, var(--blue) 70%);
@@ -55,16 +81,32 @@
       transition: height 0.5s ease;
       border-radius: 2px;
 
+      @media (max-width: 768px) {
+        margin-top: 32px;
+      }
+
       &_1 {
         height: calc(25% - 20px);
+
+        @media (max-width: 768px) {
+          height: calc(30% - 32px);
+        }
       }
 
       &_2 {
         height: calc(55% - 20px);
+
+        @media (max-width: 768px) {
+          height: calc(60% - 32px);
+        }
       }
 
       &_3 {
         height: calc(100% - 20px);
+
+        @media (max-width: 768px) {
+          height: calc(100% - 32px);
+        }
       }
     }
 
@@ -78,6 +120,10 @@
       top: 20px;
       right: 7px;
       opacity: 0;
+
+      @media (max-width: 768px) {
+        top: 30px;
+      }
 
       &_1 {
         grid-area: dot_1;
@@ -98,6 +144,12 @@
       font-size: 24px;
       line-height: 30px;
       transform: translate(20%, 0);
+
+      @media (max-width: 768px) {
+        margin: 8px 0 60px;
+        font-size: 18px;
+        line-height: 22px;
+      }
 
       li::before {
         content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
@@ -132,6 +184,10 @@
   img {
     transform: rotate(180deg);
   }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .blob9_2 {
@@ -139,4 +195,11 @@
   bottom: 0px;
   right: -300px;
   transform: translate(20%, 0);
+
+  @media (max-width: 768px) {
+    bottom: unset;
+    top: -225px;
+    right: -70px;
+    width: 300px;
+  }
 }
