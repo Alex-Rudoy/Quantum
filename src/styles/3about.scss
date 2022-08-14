@@ -4,34 +4,64 @@
   padding-right: 5vw;
   align-items: center;
 
+  @media (max-width: 768px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   &_container {
     display: flex;
     justify-content: flex-start;
     transform: translate(0, 20%);
 
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+
     h2 {
       flex: 1;
       min-width: max-content;
       margin-right: 30px;
+
+      @media (max-width: 768px) {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
     }
 
     p {
       flex: 2;
-      font-size: 20px;
-      line-height: 30px;
       border-left: 1px solid var(--text);
       padding-left: 15px;
       padding-bottom: 30px;
 
+      @media (max-width: 768px) {
+        border-left: none;
+        border-top: 1px solid var(--text);
+        padding-top: 30px;
+        padding-left: 0;
+        padding-bottom: 20px;
+      }
+
       &.last {
         padding-bottom: 0;
         margin-bottom: 60px;
+
+        @media (max-width: 768px) {
+          border-top: none;
+          padding-top: 0;
+        }
       }
     }
 
     .accent {
       padding-left: 16px;
-      border-left: none;
+      border: none;
+
+      @media (max-width: 768px) {
+        padding-left: 0;
+        padding-top: 0;
+      }
     }
   }
 
@@ -45,6 +75,13 @@
   left: -350px;
   top: -100px;
   transform: translate(-20%, 0);
+
+  @media (max-width: 768px) {
+    width: 300px;
+    height: 300px;
+    left: -85px;
+    top: -50px;
+  }
 }
 
 .blob2 {
