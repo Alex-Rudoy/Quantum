@@ -1,1 +1,81 @@
+.roadmap {
+  padding-left: 15vw;
+  padding-right: 15vw;
 
+  &_grid {
+    display: grid;
+    grid-template-areas:
+      "quarter_1 line dot_1 goals_1"
+      "quarter_2 line dot_2 goals_2"
+      "quarter_3 line dot_3 goals_3";
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 3px 0px 2fr;
+    grid-gap: 30px;
+    margin-bottom: 30px;
+
+    .quarter {
+      grid-area: head;
+      font-size: 40px;
+      line-height: 70px;
+      font-weight: 700;
+      white-space: nowrap;
+
+      &_1 {
+        grid-area: quarter_1;
+      }
+
+      &_2 {
+        grid-area: quarter_2;
+      }
+
+      &_3 {
+        grid-area: quarter_3;
+      }
+    }
+
+    .line {
+      grid-area: line;
+      width: 3px;
+      height: 100%;
+      background: linear-gradient(180deg, var(--purple) 0%, var(--blue) 100%);
+      margin: 20px;
+    }
+
+    .dot {
+      width: 11px;
+      height: 11px;
+      background: #d9d9d9;
+      border-radius: 50%;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.45);
+      position: relative;
+      top: 20px;
+      right: 17px;
+
+      &_1 {
+        grid-area: dot_1;
+      }
+
+      &_2 {
+        grid-area: dot_2;
+      }
+
+      &_3 {
+        grid-area: dot_3;
+      }
+    }
+
+    .goals {
+      &_1 {
+        grid-area: goals_1;
+      }
+
+      &_2 {
+        grid-area: goals_2;
+      }
+
+      &_3 {
+        grid-area: goals_3;
+      }
+    }
+  }
+}
