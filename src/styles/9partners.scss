@@ -1,1 +1,30 @@
+.partners {
+  padding-left: 15vw;
+  padding-right: 15vw;
 
+  h2 {
+    margin-bottom: 134px;
+  }
+
+  .partners_logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 100px;
+    row-gap: 54px;
+  }
+
+  picture,
+  img {
+    width: 186px;
+  }
+
+  picture:last-child {
+    width: 142px;
+
+    img {
+      width: 142px;
+    }
+  }
+}

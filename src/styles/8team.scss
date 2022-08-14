@@ -1,6 +1,6 @@
 .team {
-  padding-left: 330px;
-  padding-right: 110px;
+  padding-left: 15vw;
+  padding-right: 5vw;
 
   .heading {
     display: flex;
@@ -27,6 +27,7 @@
     justify-content: center;
     align-items: flex-start;
     gap: 80px;
+    margin-bottom: 80px;
 
     .member {
       display: flex;
@@ -72,5 +73,10 @@
         }
       }
     }
+  }
+
+  > p {
+    width: 100%;
+    text-align: center;
   }
 }

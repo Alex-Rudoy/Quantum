@@ -1,6 +1,6 @@
 .projects {
-  padding-left: 330px;
-  padding-right: 220px;
+  padding-left: 15vw;
+  padding-right: 10vw;
 
   h2 {
     margin-bottom: 64px;
@@ -11,6 +11,7 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 100px;
+    gap: 5vw;
 
     .content {
       width: 500px;
