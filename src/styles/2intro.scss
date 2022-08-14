@@ -9,32 +9,33 @@
     font-size: 80px;
     line-height: 90px;
     max-width: 950px;
+    transform: translate(-20%, 0);
   }
 
   video {
     height: 100%;
     position: relative;
     left: 20vw;
-    opacity: 0.8;
+    transform: translate(20%, 0);
   }
+}
 
-  .left_bg {
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 60vw;
-    background: linear-gradient(90deg, var(--bg) 46.26%, transparent 100%);
-  }
+.left_bg {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(90deg, var(--bg) 20%, rgba(0, 0, 0, 0.2) 60%);
+}
 
-  .bottom_bg {
-    z-index: -1;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    height: 168px;
-    background: linear-gradient(0deg, var(--bg) 46.26%, transparent 100%);
-  }
+.bottom_bg {
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 168px;
+  background: linear-gradient(0deg, var(--bg) 46.26%, transparent 100%);
 }

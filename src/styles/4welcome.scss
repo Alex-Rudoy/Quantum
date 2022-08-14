@@ -3,19 +3,25 @@
   align-items: center;
   padding-left: 15vw;
 
+  &_container {
+    transform: translate(0, 20%);
+  }
+
   h2 {
     margin-bottom: 30px;
   }
+}
 
-  .blob3 {
-    position: absolute;
-    top: -200px;
-    right: -100px;
-  }
+.blob3 {
+  position: absolute;
+  top: -200px;
+  right: -100px;
+  transform: translate(20%, 0);
+}
 
-  .blob4 {
-    position: absolute;
-    bottom: -300px;
-    left: -200px;
-  }
+.blob4 {
+  position: absolute;
+  bottom: -300px;
+  left: -200px;
+  transform: translate(-20%, 0);
 }

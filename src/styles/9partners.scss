@@ -8,13 +8,17 @@
     margin-bottom: 134px;
   }
 
-  .partners_logos {
+  &_logos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     column-gap: 100px;
     row-gap: 54px;
+
+    picture {
+      transform: translate(0, 20%);
+    }
 
     picture,
     img {
@@ -30,9 +34,26 @@
     }
   }
 
-  .blob8 {
-    position: absolute;
-    top: -120px;
-    right: -300px;
+  #partners2 {
+    transition-delay: 0.2s;
   }
+
+  #partners3 {
+    transition-delay: 0.4s;
+  }
+
+  #partners4 {
+    transition-delay: 0.6s;
+  }
+
+  #partners5 {
+    transition-delay: 0.8s;
+  }
+}
+
+.blob8 {
+  position: absolute;
+  top: -120px;
+  right: -300px;
+  transform: translate(20%, 0);
 }

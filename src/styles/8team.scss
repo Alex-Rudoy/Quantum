@@ -12,66 +12,14 @@
       flex: 1;
       min-width: max-content;
       margin-right: 30px;
+      transform: translate(-20%, 0);
     }
 
     p {
       border-left: 1px solid var(--text);
       padding-left: 15px;
       max-width: 646px;
-    }
-  }
-
-  .team_members {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 80px;
-    margin-bottom: 80px;
-
-    .member {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-
-      .avatar {
-        width: 190px;
-        height: 190px;
-        border-radius: 50%;
-        background: linear-gradient(90deg, var(--purple) -5%, var(--blue) 71%);
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 2px;
-
-        .inner {
-          position: relative;
-          width: 100%;
-          height: 100%;
-          background: linear-gradient(
-            180deg,
-            var(--purple) 0%,
-            var(--blue) 100%
-          );
-          // background: linear-gradient(180deg, #8B4AF9 0%, #0AEDFD 100%);
-          border: 8px solid var(--bg);
-          border-radius: 50%;
-
-          picture {
-            position: absolute;
-            width: 100%;
-            bottom: 0;
-
-            img {
-              position: absolute;
-              width: 100%;
-              bottom: 0;
-            }
-          }
-        }
-      }
+      transform: translate(20%, 0);
     }
   }
 
@@ -79,10 +27,62 @@
     width: 100%;
     text-align: center;
   }
+}
 
-  .blob7 {
-    position: absolute;
-    top: 500px;
-    left: -200px;
+.team_members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 80px;
+  margin-bottom: 80px;
+}
+
+.member {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  transform: translate(0, 20%);
+
+  .avatar {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, var(--purple) -5%, var(--blue) 71%);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+
+    .inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, var(--purple) 0%, var(--blue) 100%);
+      // background: linear-gradient(180deg, #8B4AF9 0%, #0AEDFD 100%);
+      border: 8px solid var(--bg);
+      border-radius: 50%;
+
+      picture {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+
+        img {
+          position: absolute;
+          width: 100%;
+          bottom: 0;
+        }
+      }
+    }
   }
+}
+
+.blob7 {
+  position: absolute;
+  top: 500px;
+  left: -200px;
+  transform: translate(-20%, 0);
 }
