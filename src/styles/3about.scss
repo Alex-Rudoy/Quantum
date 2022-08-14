@@ -37,4 +37,16 @@
   &_content {
     flex: 2;
   }
+
+  .blob1 {
+    position: absolute;
+    left: -350px;
+    top: -100px;
+  }
+
+  .blob2 {
+    position: absolute;
+    bottom: -250px;
+    right: -50px;
+  }
 }

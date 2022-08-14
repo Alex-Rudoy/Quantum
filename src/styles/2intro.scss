@@ -10,4 +10,31 @@
     line-height: 90px;
     max-width: 950px;
   }
+
+  video {
+    height: 100%;
+    position: relative;
+    left: 20vw;
+    opacity: 0.8;
+  }
+
+  .left_bg {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 60vw;
+    background: linear-gradient(90deg, #030204 46.26%, rgba(3, 2, 4, 0) 100%);
+  }
+
+  .bottom_bg {
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 168px;
+    background: linear-gradient(0deg, #121212 46.26%, rgba(18, 18, 18, 0) 100%);
+  }
 }
