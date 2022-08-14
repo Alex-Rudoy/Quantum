@@ -13,13 +13,26 @@
     margin-bottom: 100px;
     gap: 5vw;
 
-    .content {
-      width: 500px;
+    picture {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: row;
 
-      &.small {
-        width: 330px;
+      &:nth-child(2n) {
+        flex-direction: row-reverse;
       }
+    }
 
+    > * {
+      width: 50%;
+
+      img {
+        width: 100%;
+        max-width: 340px;
+      }
+    }
+
+    .content {
       .fw700 {
         margin-bottom: 40px;
       }
