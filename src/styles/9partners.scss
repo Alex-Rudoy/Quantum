@@ -4,8 +4,17 @@
   padding-bottom: 0;
   min-height: 90vh;
 
+  @media (max-width: 768px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   h2 {
     margin-bottom: 134px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 92px;
+    }
   }
 
   &_logos {
@@ -16,6 +25,11 @@
     column-gap: 100px;
     row-gap: 54px;
 
+    @media (max-width: 768px) {
+      column-gap: 40px;
+      row-gap: 52px;
+    }
+
     picture {
       transform: translate(0, 20%);
     }
@@ -23,13 +37,25 @@
     picture,
     img {
       width: 186px;
+
+      @media (max-width: 768px) {
+        width: 137px;
+      }
     }
 
     picture:last-child {
       width: 142px;
 
+      @media (max-width: 768px) {
+        width: 76px;
+      }
+
       img {
         width: 142px;
+
+        @media (max-width: 768px) {
+          width: 76px;
+        }
       }
     }
   }
@@ -56,4 +82,10 @@
   top: -120px;
   right: -300px;
   transform: translate(20%, 0);
+
+  @media (max-width: 768px) {
+    width: 300px;
+    top: -100px;
+    right: -80px;
+  }
 }
