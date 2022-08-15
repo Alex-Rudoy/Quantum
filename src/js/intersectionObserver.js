@@ -63,8 +63,25 @@ const blobserver = new IntersectionObserver(
   }
 );
 
+const slider_observer = new IntersectionObserver(
+  (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("slider_visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  },
+  {
+    threshold: 0.2,
+  }
+);
+
 const toAnimate = document.querySelectorAll(".toAnimate");
 toAnimate.forEach((item) => observer.observe(item));
 
 const blobs = document.querySelectorAll(".blob");
 blobs.forEach((item) => blobserver.observe(item));
+
+const slider = document.querySelector(".slider");
+slider_observer.observe(slider);
