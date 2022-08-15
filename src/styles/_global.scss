@@ -77,6 +77,31 @@ section {
   }
 }
 
+.bg2 {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+
+  p {
+    position: absolute;
+    font-weight: 900;
+    font-size: 180px;
+    line-height: 180px;
+    color: var(--text);
+    opacity: 0.02;
+    white-space: nowrap;
+
+    @media (max-width: 768px) {
+      font-size: 120px;
+      line-height: 120px;
+    }
+  }
+}
+
 .toAnimate {
   opacity: 0;
 }

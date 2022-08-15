@@ -68,6 +68,17 @@
   &_content {
     flex: 2;
   }
+
+  .bg2 p {
+    top: 20px;
+    right: 15vw;
+
+    @media (max-width: 768px) {
+      top: 150px;
+      right: unset;
+      left: 20vw;
+    }
+  }
 }
 
 .blob1 {

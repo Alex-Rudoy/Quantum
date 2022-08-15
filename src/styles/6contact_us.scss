@@ -43,6 +43,16 @@
       font-size: 20px;
     }
   }
+
+  .bg2 p {
+    top: 50px;
+    right: 0;
+
+    @media (max-width: 768px) {
+      top: 0px;
+      left: -5vw;
+    }
+  }
 }
 
 .blob5 {
