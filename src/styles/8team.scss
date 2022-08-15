@@ -119,6 +119,27 @@
     }
   }
 
+  a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 8px;
+    margin-bottom: 18px;
+
+    .name {
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 768px) {
+      margin-bottom: 8px;
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
   .name {
     font-size: 30px;
     line-height: 30px;

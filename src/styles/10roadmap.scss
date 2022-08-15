@@ -103,6 +103,7 @@
 
       &_3 {
         height: calc(100% - 20px);
+        border-radius: 0;
 
         @media (max-width: 768px) {
           height: calc(100% - 32px);
