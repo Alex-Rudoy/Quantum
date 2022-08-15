@@ -63,10 +63,24 @@ section {
     right: 0;
     pointer-events: none;
 
-    .blob img {
-      width: 100%;
+    .blob {
+      opacity: 0;
+
+      img {
+        width: 100%;
+      }
     }
   }
+}
+
+.toAnimate {
+  opacity: 0;
+}
+
+.visible {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 1 !important;
+  transform: translate(0, 0) !important;
 }
 
 //
@@ -122,14 +136,4 @@ button:-moz-focusring,
 
 textarea {
   overflow: auto;
-}
-
-.toAnimate {
-  opacity: 0;
-}
-
-.visible {
-  transition: transform 0.5s ease, opacity 0.5s ease;
-  opacity: 1 !important;
-  transform: translate(0, 0) !important;
 }

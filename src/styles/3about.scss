@@ -26,7 +26,6 @@
 
       @media (max-width: 768px) {
         margin-right: 0;
-        margin-bottom: 60px;
       }
     }
 
@@ -80,14 +79,7 @@
   @media (max-width: 768px) {
     width: 300px;
     height: 300px;
-    left: -85px;
+    left: -150px;
     top: -50px;
   }
-}
-
-.blob2 {
-  position: absolute;
-  bottom: -250px;
-  right: -50px;
-  transform: translate(20%, 0);
 }
