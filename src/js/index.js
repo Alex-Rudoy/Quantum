@@ -1,6 +1,7 @@
 import "./contactUs";
 import "./intersectionObserver";
 import "./mobileMenu";
+import "./parallax";
 import "./slider";
 
 import "../styles/index.scss";
