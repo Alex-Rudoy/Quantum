@@ -8,10 +8,6 @@ const observer = new IntersectionObserver(
         entry.target.classList.add("visible");
         observer.unobserve(entry.target);
 
-        if (entry.target.classList.contains("video_trigger")) {
-          document.querySelector("video").classList.add("visible");
-        }
-
         if (entry.target.classList.contains("goals_1")) {
           goalsShown = Math.max(goalsShown, 1);
           updateQuarter = true;
@@ -63,7 +59,7 @@ const blobserver = new IntersectionObserver(
     });
   },
   {
-    threshold: 0.2,
+    threshold: 0.1,
   }
 );
 

@@ -32,12 +32,11 @@
     height: 100%;
     position: relative;
     left: 20vw;
-    transform: translate(20%, 0);
 
     @media (max-width: 768px) {
       left: unset;
       height: 70%;
-      transform: translate(0, 0);
+      margin-left: 9%;
     }
   }
 
@@ -48,17 +47,23 @@
     bottom: 0;
     left: 20vw;
     background: #fff;
-    opacity: 0.07 !important;
-    transform: translate(20%, 0);
+    opacity: 0.07;
 
     @media (max-width: 768px) {
       top: unset;
       height: 70%;
-      transform: translate(0, 0);
     }
   }
 
-  .bg {
+  .bgIntro {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+
     @media (max-width: 768px) {
       display: flex;
       flex-direction: column;

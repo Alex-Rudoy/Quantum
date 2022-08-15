@@ -20,6 +20,11 @@ body {
   overflow-x: hidden;
 }
 
+#loader.hidden {
+  opacity: 0 !important;
+  pointer-events: none;
+}
+
 .no_transition * {
   transition: none !important;
 }
@@ -69,6 +74,7 @@ section {
 
     .blob {
       opacity: 0;
+      transition: transform 0.8s ease 1s, opacity 0.8s ease 1s;
 
       img {
         width: 100%;
@@ -104,10 +110,10 @@ section {
 
 .toAnimate {
   opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
 .visible {
-  transition: transform 0.5s ease, opacity 0.5s ease;
   opacity: 1 !important;
   transform: translate(0, 0) !important;
 }

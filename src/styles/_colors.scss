@@ -9,23 +9,59 @@
 }
 
 .web {
-  background: linear-gradient(90deg, var(--pink) -5%, var(--purple) 105%);
+  background: linear-gradient(
+    90deg,
+    var(--pink) 0%,
+    var(--purple) 33%,
+    var(--pink) 67%,
+    var(--purple) 100%
+  );
 }
 
 .game {
-  background: linear-gradient(90deg, var(--purple) -5%, var(--deepblue) 70%);
+  background: linear-gradient(
+    90deg,
+    var(--purple) 0%,
+    var(--deepblue) 33%,
+    var(--purple) 67%,
+    var(--deepblue) 100%
+  );
 }
 
 .studio {
-  background: linear-gradient(90deg, #23c6fe -4.56%, #01efff 71.06%);
+  background: linear-gradient(
+    90deg,
+    #23c6fe 0%,
+    #01efff 33%,
+    #23c6fe 67%,
+    #01efff 100%
+  );
 }
 
 .accent {
-  background: linear-gradient(90deg, var(--purple) -5%, var(--blue) 71%);
+  background: linear-gradient(
+    90deg,
+    var(--purple) 0%,
+    var(--blue) 33%,
+    var(--purple) 67%,
+    var(--blue) 100%
+  );
 }
 
 .gradientText {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-size: 300%;
+  animation: gradientAnimation 3s linear infinite;
+}
+
+// keyframes for infinite gradient animation
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }

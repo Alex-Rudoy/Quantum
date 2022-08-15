@@ -23,7 +23,7 @@
       "quarter_2   line   dot_2   goals_2"
       "quarter_3   line   dot_3   goals_3";
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 270px 3px 0px 1fr;
+    grid-template-columns: 1fr 3px 0px 1fr;
 
     @media (max-width: 768px) {
       grid-template-areas:
@@ -45,18 +45,28 @@
       margin-right: 30px;
       transform: translate(-20%, 0);
       opacity: 0;
+      text-align: right;
 
       @media (max-width: 768px) {
         font-size: 30px;
         margin-left: 20px;
         transform: translate(20%, 0);
+        text-align: left;
       }
 
       &.active {
-        background: linear-gradient(270deg, var(--purple) 35%, var(--blue) 70%);
+        background: linear-gradient(
+          270deg,
+          var(--purple) 0%,
+          var(--blue) 33%,
+          var(--purple) 67%,
+          var(--blue) 100%
+        );
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        background-size: 300%;
+        animation: gradientAnimation 3s linear infinite;
       }
 
       &_1 {
