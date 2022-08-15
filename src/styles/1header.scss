@@ -9,7 +9,11 @@ header {
   align-items: center;
   padding: 0px 5vw;
   height: 110px;
-  background: linear-gradient(var(--bg) 70%, transparent);
+  background: linear-gradient(var(--bg) 80%, transparent);
+
+  @media (max-width: 768px) {
+    height: 80px;
+  }
 
   svg {
     @media (max-width: 768px) {
@@ -126,7 +130,7 @@ header {
   }
 
   a {
-    color: var(--text);
+    color: #fff;
     text-decoration: none;
     font-size: 20px;
     line-height: 24px;
