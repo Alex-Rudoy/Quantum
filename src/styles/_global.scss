@@ -20,6 +20,10 @@ body {
   overflow-x: hidden;
 }
 
+.no_transition * {
+  transition: none !important;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

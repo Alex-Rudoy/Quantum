@@ -1,27 +1,22 @@
-// open modal
+const contactUsPopup = document.querySelector(".contact_us_popup");
+const nameField = document.getElementById("name");
+const emailField = document.getElementById("email");
+const messageField = document.getElementById("message");
+
+const openPopup = () =>
+  contactUsPopup.classList.add("contact_us_popup_visible");
+
+const closePopup = () =>
+  contactUsPopup.classList.remove("contact_us_popup_visible");
+
 document.querySelectorAll(".contact_us_button").forEach((button) => {
-  button.addEventListener("click", () => {
-    document
-      .querySelector(".contact_us_popup")
-      .classList.add("contact_us_popup_visible");
-  });
+  button.addEventListener("click", openPopup);
 });
 
-// close on click X button
-document.querySelector(".close_button").addEventListener("click", () => {
-  document
-    .querySelector(".contact_us_popup")
-    .classList.remove("contact_us_popup_visible");
-});
+document.querySelector(".close_button").addEventListener("click", closePopup);
 
-// close on click outside
-document.querySelector(".contact_us_popup").addEventListener("click", () => {
-  document
-    .querySelector(".contact_us_popup")
-    .classList.remove("contact_us_popup_visible");
-});
+contactUsPopup.addEventListener("click", closePopup);
 
-// don't close on click inside
 document
   .querySelector(".contact_us_popup_content")
   .addEventListener("click", (e) => {
@@ -32,14 +27,9 @@ document
 document
   .querySelector(".send_feedback_button")
   .addEventListener("click", async () => {
-    const nameField = document.getElementById("name");
-    const emailField = document.getElementById("email");
-    const messageField = document.getElementById("message");
+    closePopup();
 
-    document
-      .querySelector(".contact_us_popup")
-      .classList.remove("contact_us_popup_visible");
-
+    // todo: change to send email
     await new Promise((resolve) => setTimeout(resolve, 1000));
 
     nameField.value = "";
