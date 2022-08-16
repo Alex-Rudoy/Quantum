@@ -9,15 +9,6 @@
 }
 
 .rainbow {
-  // background: linear-gradient(
-  //   90deg,
-  //   var(--pink) 0%,
-  //   var(--purple) 25%,
-  //   var(--blue) 50%,
-  //   var(--purple) 75%,
-  //   var(--pink) 100%
-  // );
-
   background: rgba(0, 0, 0, 0)
     linear-gradient(
       270deg,
@@ -27,65 +18,33 @@
       rgb(234, 223, 78) 76.04%,
       rgb(255, 115, 86) 100%
     );
-
-  background-repeat: repeat;
-  background-size: 200%;
-}
-
-.web {
-  background: linear-gradient(
-    90deg,
-    var(--pink) 0%,
-    var(--purple) 33%,
-    var(--pink) 67%,
-    var(--purple) 100%
-  );
-}
-
-.game {
-  background: linear-gradient(
-    90deg,
-    var(--purple) 0%,
-    var(--deepblue) 33%,
-    var(--purple) 67%,
-    var(--deepblue) 100%
-  );
-}
-
-.studio {
-  background: linear-gradient(
-    90deg,
-    #23c6fe 0%,
-    #01efff 33%,
-    #23c6fe 67%,
-    #01efff 100%
-  );
 }
 
 .accent {
   background: linear-gradient(
     90deg,
     var(--purple) 0%,
-    var(--blue) 33%,
-    var(--purple) 67%,
-    var(--blue) 100%
+    var(--blue) 50%,
+    var(--purple) 100%
   );
 }
 
 .gradientText {
+  background-repeat: repeat;
+  background-size: 200%;
   position: relative;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  // background-size: 300%;
   animation: gradientAnimation 3s linear infinite;
 
-  > span {
+  .gradientText {
+    width: 100%;
     position: absolute;
     left: 0;
     top: 0;
-    filter: blur(20px);
-    opacity: 0.7;
+    filter: blur(0.3em);
+    opacity: 0.6;
   }
 }
 
