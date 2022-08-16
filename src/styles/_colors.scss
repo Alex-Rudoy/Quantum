@@ -78,7 +78,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   // background-size: 300%;
-  animation: gradientAnimation2 2s linear infinite;
+  animation: gradientAnimation 3s linear infinite;
 
   > span {
     position: absolute;
@@ -95,12 +95,6 @@
     background-position: 0% 50%;
   }
   100% {
-    background-position: 100% 50%;
-  }
-}
-
-@keyframes gradientAnimation2 {
-  100% {
-    background-position: 200% center;
+    background-position: 200% 50%;
   }
 }
