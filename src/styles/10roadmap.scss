@@ -188,9 +188,20 @@
     }
   }
 
-  .bg2 p {
-    top: -50px;
-    right: 15vw;
+  .bg .parallaxCompensator {
+    transform: translate(0, -320vh);
+
+    @media (max-width: 768px) {
+      transform: translate(0, -300vh);
+    }
+  }
+
+  .bg2 .parallaxCompensator {
+    transform: translate(0, -165vh);
+
+    @media (max-width: 768px) {
+      transform: translate(0, -150vh);
+    }
   }
 }
 

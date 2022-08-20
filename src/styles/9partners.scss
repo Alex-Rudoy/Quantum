@@ -2,7 +2,7 @@
   padding-left: 15vw;
   padding-right: 15vw;
   padding-bottom: 0;
-  min-height: 90vh;
+  min-height: 80vh;
 
   @media (max-width: 768px) {
     padding-left: 20px;
@@ -76,9 +76,20 @@
     transition-delay: 0.8s;
   }
 
-  .bg2 p {
-    top: -20px;
-    left: -1vw;
+  .bg .parallaxCompensator {
+    transform: translate(0, -300vh);
+
+    @media (max-width: 768px) {
+      transform: translate(0, -270vh);
+    }
+  }
+
+  .bg2 .parallaxCompensator {
+    transform: translate(0, -150vh);
+
+    @media (max-width: 768px) {
+      transform: translate(0, -135vh);
+    }
   }
 }
 

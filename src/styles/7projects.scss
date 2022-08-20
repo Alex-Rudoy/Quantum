@@ -101,8 +101,19 @@
     }
   }
 
-  .bg2 p {
-    top: 0px;
-    left: -5vw;
+  .bg .parallaxCompensator {
+    transform: translate(0, -150vh);
+
+    @media (max-width: 768px) {
+      transform: translate(0, -130vh);
+    }
+  }
+
+  .bg2 .parallaxCompensator {
+    transform: translate(0, -75vh);
+
+    @media (max-width: 768px) {
+      transform: translate(0, -65vh);
+    }
   }
 }

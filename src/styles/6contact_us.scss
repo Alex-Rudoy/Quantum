@@ -44,13 +44,19 @@
     }
   }
 
-  .bg2 p {
-    top: 50px;
-    right: 0;
+  .bg .parallaxCompensator {
+    transform: translate(0, -120vh);
 
     @media (max-width: 768px) {
-      top: 0px;
-      left: -5vw;
+      transform: translate(0, -100vh);
+    }
+  }
+
+  .bg2 .parallaxCompensator {
+    transform: translate(0, -60vh);
+
+    @media (max-width: 768px) {
+      transform: translate(0, -50vh);
     }
   }
 }

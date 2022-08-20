@@ -28,6 +28,36 @@
     }
   }
 
+  .bgIntro {
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    img {
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 20vw;
+
+      @media (max-width: 768px) {
+        left: unset;
+        height: 70%;
+        margin-left: 9%;
+      }
+    }
+  }
+
   video {
     height: 100%;
     position: relative;
@@ -52,23 +82,6 @@
     @media (max-width: 768px) {
       top: unset;
       height: 70%;
-    }
-  }
-
-  .bgIntro {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    pointer-events: none;
-
-    @media (max-width: 768px) {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      align-items: center;
     }
   }
 }

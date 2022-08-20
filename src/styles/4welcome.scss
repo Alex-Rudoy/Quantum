@@ -16,13 +16,19 @@
     margin-bottom: 30px;
   }
 
-  .bg2 p {
-    top: 80px;
-    left: 0;
+  .bg .parallaxCompensator {
+    transform: translate(0, -40vh);
 
     @media (max-width: 768px) {
-      top: 270px;
-      left: -5vw;
+      transform: translate(0, 0);
+    }
+  }
+
+  .bg2 .parallaxCompensator {
+    transform: translate(0, -20vh);
+
+    @media (max-width: 768px) {
+      transform: translate(0, 0);
     }
   }
 }

@@ -55,9 +55,12 @@
     text-align: center;
   }
 
-  .bg2 p {
-    top: -50px;
-    right: -10vw;
+  .bg .parallaxCompensator {
+    transform: translate(0, -220vh);
+  }
+
+  .bg2 .parallaxCompensator {
+    transform: translate(0, -110vh);
   }
 }
 
