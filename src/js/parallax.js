@@ -41,4 +41,6 @@ const deviceOrientationEffect = (event) => {
 
 const throttledDeviceOrientationEffect = throttle(deviceOrientationEffect, 100);
 
-window.addEventListener("deviceorientation", throttledDeviceOrientationEffect);
+window.addEventListener("deviceorientation", (e) =>
+  throttledDeviceOrientationEffect(e)
+);
