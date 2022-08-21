@@ -5,15 +5,12 @@ const backgrounds2 = document.querySelectorAll(".bg2");
 const parallax = document.querySelectorAll(".bg .parallax");
 const parallax2 = document.querySelectorAll(".bg2 .parallax");
 
-console.log(backgrounds);
-
 const parallaxEffect = () => {
   parallax.forEach((bg) => {
     const section = bg.parentElement.parentElement;
     const H2 = section.querySelector("h2");
     const H2Y = H2.getBoundingClientRect().top;
     const offset = H2Y - section.getBoundingClientRect().top;
-    console.log(H2, H2Y, section, offset);
     bg.style.transform = `translateY(${-H2Y / 4 + offset - 100}px)`;
   });
   parallax2.forEach((bg) => {
