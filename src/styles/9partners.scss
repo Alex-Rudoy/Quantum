@@ -1,8 +1,6 @@
 .partners {
-  padding-left: 15vw;
-  padding-right: 15vw;
-  padding-bottom: 0;
-  min-height: 80vh;
+  padding: 10vh 15vh;
+  min-height: 0;
 
   @media (max-width: 768px) {
     padding-left: 20px;
@@ -76,20 +74,8 @@
     transition-delay: 0.8s;
   }
 
-  .bg .parallaxCompensator {
-    transform: translate(0, -300vh);
-
-    @media (max-width: 768px) {
-      transform: translate(0, -270vh);
-    }
-  }
-
-  .bg2 .parallaxCompensator {
-    transform: translate(0, -150vh);
-
-    @media (max-width: 768px) {
-      transform: translate(0, -135vh);
-    }
+  .bg2 p {
+    left: 0;
   }
 }
 

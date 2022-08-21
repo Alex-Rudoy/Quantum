@@ -187,22 +187,6 @@
       }
     }
   }
-
-  .bg .parallaxCompensator {
-    transform: translate(0, -320vh);
-
-    @media (max-width: 768px) {
-      transform: translate(0, -300vh);
-    }
-  }
-
-  .bg2 .parallaxCompensator {
-    transform: translate(0, -165vh);
-
-    @media (max-width: 768px) {
-      transform: translate(0, -150vh);
-    }
-  }
 }
 
 .blob9 {
@@ -228,7 +212,7 @@
 
   @media (max-width: 768px) {
     bottom: unset;
-    top: -200px;
+    top: -20px;
     right: -120px;
     width: 300px;
   }

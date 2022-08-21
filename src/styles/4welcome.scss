@@ -16,20 +16,8 @@
     margin-bottom: 30px;
   }
 
-  .bg .parallaxCompensator {
-    transform: translate(0, -40vh);
-
-    @media (max-width: 768px) {
-      transform: translate(0, 0);
-    }
-  }
-
-  .bg2 .parallaxCompensator {
-    transform: translate(0, -20vh);
-
-    @media (max-width: 768px) {
-      transform: translate(0, 0);
-    }
+  .bg2 p {
+    left: 0;
   }
 }
 
@@ -55,6 +43,6 @@
   @media (max-width: 768px) {
     width: 300px;
     left: -150px;
-    bottom: -100px;
+    bottom: 0px;
   }
 }

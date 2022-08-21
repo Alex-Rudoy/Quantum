@@ -69,6 +69,8 @@ module.exports = {
     static: "./src", //source of static assets
     port: 3000, // port to run dev-server
   },
-  // mode: "production",
-  mode: "development",
+  mode: "production",
+  stats: {
+    warnings: false,
+  },
 };

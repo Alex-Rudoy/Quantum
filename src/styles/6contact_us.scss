@@ -44,20 +44,8 @@
     }
   }
 
-  .bg .parallaxCompensator {
-    transform: translate(0, -120vh);
-
-    @media (max-width: 768px) {
-      transform: translate(0, -100vh);
-    }
-  }
-
-  .bg2 .parallaxCompensator {
-    transform: translate(0, -60vh);
-
-    @media (max-width: 768px) {
-      transform: translate(0, -50vh);
-    }
+  .bg2 p {
+    left: 0;
   }
 }
 

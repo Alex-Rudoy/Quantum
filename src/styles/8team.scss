@@ -54,14 +54,6 @@
     width: 100%;
     text-align: center;
   }
-
-  .bg .parallaxCompensator {
-    transform: translate(0, -220vh);
-  }
-
-  .bg2 .parallaxCompensator {
-    transform: translate(0, -110vh);
-  }
 }
 
 .team_members {
@@ -100,8 +92,8 @@
     margin-bottom: 30px;
 
     @media (max-width: 768px) {
-      width: 100px;
-      height: 100px;
+      width: 110px;
+      height: 110px;
       margin-bottom: 12px;
     }
 

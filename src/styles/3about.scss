@@ -68,34 +68,17 @@
   &_content {
     flex: 2;
   }
-
-  .bg .parallaxCompensator {
-    transform: translate(0, -25vh);
-
-    @media (max-width: 768px) {
-      transform: translate(0, 0);
-    }
-  }
-
-  .bg2 .parallaxCompensator {
-    transform: translate(0, -12.5vh);
-
-    @media (max-width: 768px) {
-      transform: translate(0, 5vh);
-    }
-  }
 }
 
 .blob1 {
   position: absolute;
   left: -350px;
-  top: -100px;
+  top: 0px;
   transform: translate(-20%, 0);
 
   @media (max-width: 768px) {
     width: 300px;
     height: 300px;
     left: -150px;
-    top: -50px;
   }
 }
