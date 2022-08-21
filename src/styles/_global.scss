@@ -71,7 +71,7 @@ section {
     bottom: 0;
     right: 0;
     pointer-events: none;
-    transition: transform 0.1s ease;
+    transition: transform 0.5s ease;
 
     .blob {
       opacity: 0;
@@ -92,7 +92,7 @@ section {
   bottom: 0;
   right: 0;
   pointer-events: none;
-  transition: transform 0.1s ease;
+  transition: transform 0.5s ease;
 
   p {
     position: absolute;
@@ -119,7 +119,7 @@ section {
   left: 0;
   bottom: 0;
   right: 0;
-  transition: transform 0.1s ease;
+  transition: transform 0.5s ease;
 }
 
 .toAnimate {
