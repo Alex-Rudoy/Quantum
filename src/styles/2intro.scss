@@ -32,12 +32,15 @@
     position: absolute;
     z-index: -2;
     top: 0;
-    left: 0;
     bottom: 0;
     right: 0;
+    left: 20vw;
     pointer-events: none;
 
     @media (max-width: 768px) {
+      height: 70%;
+      top: unset;
+      left: 0;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
@@ -47,12 +50,10 @@
     img {
       height: 100%;
       position: absolute;
-      top: 0;
-      left: 20vw;
+      bottom: 0;
+      left: 0;
 
       @media (max-width: 768px) {
-        left: unset;
-        height: 70%;
         margin-left: 9%;
       }
     }
@@ -61,11 +62,8 @@
   video {
     height: 100%;
     position: relative;
-    left: 20vw;
 
     @media (max-width: 768px) {
-      left: unset;
-      height: 70%;
       margin-left: 9%;
     }
   }
@@ -75,14 +73,10 @@
     top: 0;
     right: 0;
     bottom: 0;
-    left: 20vw;
+    left: 0;
     background: #fff;
     opacity: 0.07;
     z-index: 2;
-
-    @media (max-width: 768px) {
-      left: 0;
-    }
   }
 }
 
@@ -93,14 +87,12 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(90deg, var(--bg) 20%, rgba(15, 15, 15, 0.2) 60%);
+  background: linear-gradient(90deg, var(--bg) 20%, transparent 40%);
+  transform: translate3d(0, 0, 1px);
+  -webkit-transform: translate3d(0, 0, 1px);
 
   @media (max-width: 768px) {
-    background: linear-gradient(
-      180deg,
-      var(--bg) 20%,
-      rgba(15, 15, 15, 0.2) 60%
-    );
+    background: linear-gradient(180deg, var(--bg) 30%, transparent 40%);
   }
 }
 
@@ -112,6 +104,8 @@
   left: 0;
   height: 168px;
   background: linear-gradient(0deg, var(--bg) 0%, transparent 100%);
+  transform: translate3d(0, 0, 1px);
+  -webkit-transform: translate3d(0, 0, 1px);
 
   @media (max-width: 768px) {
     height: 60px;

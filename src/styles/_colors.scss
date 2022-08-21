@@ -37,6 +37,9 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: gradientAnimation 3s linear infinite;
+  overflow: visible;
+  transform: translate3d(0, 0, 1px);
+  -webkit-transform: translate3d(0, 0, 1px);
 
   .gradientText {
     width: 100%;

@@ -10,6 +10,8 @@ header {
   padding: 0px 5vw;
   height: 110px;
   background: linear-gradient(var(--bg) 70%, transparent);
+  transform: translate3d(0, 0, 1px);
+  -webkit-transform: translate3d(0, 0, 1px);
 
   @media (max-width: 768px) {
     height: 80px;

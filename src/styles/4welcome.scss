@@ -19,6 +19,14 @@
   .bg2 p {
     left: 0;
   }
+
+  .gradientText {
+    white-space: nowrap;
+
+    @media (max-width: 768px) {
+      white-space: normal;
+    }
+  }
 }
 
 .blob3 {
