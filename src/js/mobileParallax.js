@@ -1,7 +1,7 @@
 const backgrounds = document.querySelectorAll(".bg");
 const backgrounds2 = document.querySelectorAll(".bg2");
 
-const deviceOrientationEffect = (event) => {
+window.addEventListener("deviceorientation", (event) => {
   backgrounds.forEach((bg) => {
     bg.style.transform = `translate(${event.gamma}px, ${event.beta - 35}px)`;
   });
@@ -10,6 +10,4 @@ const deviceOrientationEffect = (event) => {
       (event.beta - 35) / 2
     }px)`;
   });
-};
-
-window.addEventListener("deviceorientation", (e) => deviceOrientationEffect(e));
+});
