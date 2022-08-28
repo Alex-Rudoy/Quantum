@@ -15,6 +15,8 @@ const animateSlider = () => {
   slider.style.transform = `translateX(-${slideToMove.offsetLeft}px)`;
 };
 
+animateSlider();
+
 prevButton.addEventListener("click", () => {
   if (currentSlide === 1) return;
   currentSlide--;

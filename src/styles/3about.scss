@@ -68,17 +68,17 @@
   &_content {
     flex: 2;
   }
-}
 
-.blob1 {
-  position: absolute;
-  left: -350px;
-  top: 0px;
-  transform: translate(-20%, 0);
+  .blob1 {
+    position: absolute;
+    left: -350px;
+    top: 0px;
+    transform: translate(-20%, 0);
 
-  @media (max-width: 768px) {
-    width: 300px;
-    height: 300px;
-    left: -150px;
+    @media (max-width: 768px) {
+      width: 300px;
+      height: 300px;
+      left: -150px;
+    }
   }
 }

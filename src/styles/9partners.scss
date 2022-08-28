@@ -77,17 +77,17 @@
   .bg2 p {
     left: 0;
   }
-}
 
-.blob8 {
-  position: absolute;
-  top: -120px;
-  right: -300px;
-  transform: translate(20%, 0);
+  .blob8 {
+    position: absolute;
+    top: -120px;
+    right: -300px;
+    transform: translate(20%, 0);
 
-  @media (max-width: 768px) {
-    width: 300px;
-    top: -80px;
-    right: -150px;
+    @media (max-width: 768px) {
+      width: 300px;
+      top: -80px;
+      right: -150px;
+    }
   }
 }

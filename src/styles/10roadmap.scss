@@ -188,33 +188,33 @@
       }
     }
   }
-}
 
-.blob9 {
-  position: absolute;
-  top: 200px;
-  left: -300px;
-  transform: translate(-20%, 0) !important;
+  .blob9 {
+    position: absolute;
+    top: 200px;
+    left: -300px;
+    transform: translate(-20%, 0) !important;
 
-  img {
-    transform: rotate(180deg);
+    img {
+      transform: rotate(180deg);
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 
-  @media (max-width: 768px) {
-    display: none;
-  }
-}
+  .blob9_2 {
+    position: absolute;
+    bottom: 0px;
+    right: -300px;
+    transform: translate(20%, 0);
 
-.blob9_2 {
-  position: absolute;
-  bottom: 0px;
-  right: -300px;
-  transform: translate(20%, 0);
-
-  @media (max-width: 768px) {
-    bottom: unset;
-    top: -20px;
-    right: -120px;
-    width: 300px;
+    @media (max-width: 768px) {
+      bottom: unset;
+      top: -20px;
+      right: -120px;
+      width: 300px;
+    }
   }
 }
