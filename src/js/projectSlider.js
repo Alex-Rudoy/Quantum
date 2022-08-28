@@ -23,6 +23,7 @@ const projectSlider = (slider) => {
 
   let currentSlide = 0;
   let fullScreenCurrentSlide = 0;
+  let isVisible = false;
 
   const animateSlider = () => {
     const slideToMove = sliderContent.children[currentSlide];
@@ -35,7 +36,8 @@ const projectSlider = (slider) => {
   };
 
   const animateFullSlider = () => {
-    fullScreenSlider.classList.add("visible");
+    fullScreenSlider.classList.add("fullScreenSlider_visible");
+    isVisible = true;
     const slideToMove =
       fullScreenSliderContent.children[fullScreenCurrentSlide];
 
@@ -53,15 +55,9 @@ const projectSlider = (slider) => {
     if (fullScreenCurrentSlide === numberOfSlides - 1)
       fullScreenNextButton.classList.add("disabled");
 
-    console.log(fullScreenCurrentSlide);
-    console.log(slideToMove);
-
     fullScreenSliderContent.style.transform = `translateX(${
       -slideToMove.offsetLeft + (window.innerWidth / 100) * 15
     }px)`;
-
-    console.log(slideToMove.offsetLeft - (window.innerWidth / 100) * 15);
-    console.log("ololo");
   };
 
   animateSlider();
@@ -73,7 +69,7 @@ const projectSlider = (slider) => {
   });
 
   nextButton.addEventListener("click", () => {
-    if (currentSlide === numberOfSlides - (window.innerWidth > 768 ? 1 : 0))
+    if (currentSlide === numberOfSlides - 1 - (window.innerWidth > 768 ? 1 : 0))
       return;
     currentSlide++;
     animateSlider();
@@ -102,7 +98,18 @@ const projectSlider = (slider) => {
   }
 
   fullScreenSlider.addEventListener("click", () => {
-    fullScreenSlider.classList.remove("visible");
+    fullScreenSlider.classList.remove("fullScreenSlider_visible");
+    isVisible = false;
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (!isVisible) return;
+
+    if (e.key === "ArrowLeft") {
+      fullScreenPrevButton.click();
+    } else if (e.key === "ArrowRight") {
+      fullScreenNextButton.click();
+    }
   });
 };
 

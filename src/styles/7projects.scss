@@ -15,7 +15,7 @@
   .row {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     margin-bottom: 100px;
     gap: 5vw;
 
@@ -120,6 +120,7 @@
 
       .slide {
         width: calc(23.33vw - 10px);
+        cursor: pointer;
 
         @media (max-width: 768px) {
           width: calc(100vw - 40px);
@@ -171,13 +172,14 @@
   bottom: 0;
   right: 0;
   left: 0;
-  background-color: rgba(15, 15, 15, 0.2);
+  background-color: rgba(15, 15, 15, 0.4);
+  transform: translate3d(0, 0, 2px);
   backdrop-filter: blur(10px);
   opacity: 0;
   transition: opacity 0.3s ease;
   pointer-events: none;
 
-  &.visible {
+  &_visible {
     opacity: 1;
     pointer-events: all;
   }
@@ -189,6 +191,7 @@
     width: max-content;
     transition: transform 0.3s ease;
     gap: 5vw;
+    margin-bottom: 20px;
 
     .slide {
       width: 70vw;
@@ -210,6 +213,7 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    padding-right: 20px;
 
     button {
       width: 60px;
@@ -217,7 +221,7 @@
       border-radius: 50%;
 
       &.disabled {
-        background: transparent;
+        background: #121212;
         border: 1px solid #333;
         cursor: not-allowed;
 
