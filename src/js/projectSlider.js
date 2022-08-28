@@ -111,6 +111,16 @@ const projectSlider = (slider) => {
       fullScreenNextButton.click();
     }
   });
+
+  for (let i = 0; i < numberOfSlides; i++) {
+    fullScreenSliderContent.children[i].addEventListener("click", (e) => {
+      if (fullScreenSliderContent.children[i].classList.contains("active"))
+        return;
+      e.stopPropagation();
+      fullScreenCurrentSlide = i;
+      animateFullSlider();
+    });
+  }
 };
 
 const sliders = document.querySelectorAll(".projectSlider");
