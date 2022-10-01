@@ -12,7 +12,7 @@ const animateSlider = () => {
   nextButton.classList.remove("disabled");
   if (currentSlide === 1) prevButton.classList.add("disabled");
   if (currentSlide === 3) nextButton.classList.add("disabled");
-  slider.style.transform = `translateX(-${slideToMove.offsetLeft}px)`;
+  slider.style.transform = `translateX(${-slideToMove.offsetLeft}px)`;
 };
 
 animateSlider();

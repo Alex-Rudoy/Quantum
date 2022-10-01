@@ -32,7 +32,7 @@ const projectSlider = (slider) => {
     if (currentSlide === 0) prevButton.classList.add("disabled");
     if (currentSlide === numberOfSlides - 1 - (window.innerWidth > 768 ? 1 : 0))
       nextButton.classList.add("disabled");
-    sliderContent.style.transform = `translateX(-${slideToMove.offsetLeft}px)`;
+    sliderContent.style.transform = `translateX(${-slideToMove.offsetLeft}px)`;
   };
 
   const animateFullSlider = () => {
